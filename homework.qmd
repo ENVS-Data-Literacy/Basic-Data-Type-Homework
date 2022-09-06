@@ -1,0 +1,159 @@
+---
+title: "Basic Data Types"
+author: "YOUR NAME HERE, No really, put your name here!"
+format: 
+  html:
+    toc: true
+editor: visual
+---
+
+> The successful use of `R` requires you to become familiar with and adept at using the language and its grammar in the manipulation of data, analysis, and discussion. In this first section, we will begin working with some fundamental data types and how they can be integrated into a common workflow.
+
+## Instructions
+
+For this exercise, the following sections have existing code chunks, please enter the R code and operations in the chunks. You can check the syntax by eitehr hitting the small green play triangle on the upper right of each chunk, by rendering the document, or by selecting one of the options in the run menu at the top of this window.
+
+## Exercises
+
+### Missing Data
+
+Missing data is the most fundamental kind of data, it is the oubliette of information and is defined by `NA`.
+
+\*Define a variable named `x` as representing missing data.\*
+
+```{r}
+
+```
+
+Introspection is the process of asking what kind of class a particular data type is. What class is `x`?
+
+```{r}
+
+```
+
+Another way of inquiring about a missing data point is to use one of the many `is.*` functions. For missing data, there is an `is.na()` function.
+
+*Test to see if your variable is missing by using is.na(). Assign the answer to a new variable and then determine what class that new variable is using class()*.
+
+```{r}
+
+```
+
+### Numerical Data
+
+Numerical data is the most common kind of data we will be working with `R`. It represents floating point numbers along the range (on your current machine) going from `r .Machine$double.neg.eps` up to `r .Machine$double.eps` (different machines have different capabilities).
+
+I'm going to define some basic variables.
+
+```{r}
+a <- 12
+b <- 16
+```
+
+*Show that you can use the basic arithmetic operators on these variables (add, subtract, multiply, and divide).*
+
+```{r}
+
+```
+
+Comparison operators are \<, \>, ==, !=, \<=, and \>=.
+
+*Show that you can use these comparison operators*.
+
+```{r}
+
+```
+
+Exponents are done using the carat symbol (`^` shift+6 on most US keyboards).
+
+*Is `b^a` bigger than `a^b`? Use a comparison operator for the answer.*
+
+```{r}
+
+```
+
+Consider that `a` and `b` are the lengths of two legs of a right-triangle. What is the length of the hypotenuse? (hint: `sqrt()` function is very helpful here.
+
+```{r}
+
+```
+
+### Logical Data
+
+Logical data consists of either `TRUE` or `FALSE` and is often the result of some inquiry (like making the comparison operations above).
+
+Use the variables form the previous section an the operators `<`, `>`, `==` , and `!=` to define four logical values.
+
+```{r}
+
+```
+
+Operations on logical consist of both AND & OR. In `R` these operations are represented by the ampersand `&` and the pipe `|` characters.
+
+*Use the AND operator and two logical to test out T/T, T/F, F/T, F/F*
+
+```{r}
+
+```
+
+*Use the OR operator to test T/T, T/F, F/T, F/F*
+
+```{r}
+
+```
+
+### Character Data
+
+Character data is the default data type. Everything can be coerced into its character representation.
+
+*Create two variables, one for your first name and one for your second.*
+
+```{r}
+
+```
+
+*Paste these variable together into a new variable for your full name.*
+
+```{r}
+
+```
+
+Insert into the space below, your full name into a sentence, using the variable you defined above, but as **in text**.
+
+### Date & Time Data
+
+Dates and times are specific kinds of data that represent a geolocation and point in time.
+
+If you do not already have the library `lubridate` on your computer, run the code in the following chunk. Notice the comment & pipe character on the first line `#|` of the chunk. This is how you can add some different behavior to a chunk. In this case, I am telling it to not evaluate when you render the document because there is no need to install the library if you already have it. You will have to run it manually if you need it installed.
+
+```{r}
+#| eval: false 
+
+install.packages( "lubridate" )
+```
+
+Let's start by using functions from the `lubridate` library to define some dates.
+
+*Import the library and define two variables. Your birthday (or your fictitious one if you like) and a variable for today.*
+
+```{r}
+
+```
+
+*What is the Julian day of your birthday?*
+
+```{r}
+
+```
+
+*Are these dates equal? Test equality of these dates.*
+
+```{r}
+
+```
+
+*How many days between these two dates?*
+
+```{r}
+
+```
