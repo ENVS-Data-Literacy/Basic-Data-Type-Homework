@@ -1,4 +1,4 @@
-:lolcat:
+:octocat:
 
 # Basic Data Types Homework
 
