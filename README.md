@@ -1,5 +1,3 @@
-:octocat:
-
 # Basic Data Types Homework
 
 This homework is the first to dive into the basic data types we have in R. These include:  
@@ -29,5 +27,5 @@ By the end of this activity, individuals should be able to:
 
 ## Homework Activity
 
-So the 
+See the included homework.qmd file for instructions.
 
