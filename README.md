@@ -18,8 +18,8 @@ By the end of this activity, individuals should be able to:
 
 
 ## Resources Content
- - [Slides](https://dyerlabteaching.github.io/basic-data-types/slides.html)
- - [Narrative](https://dyerlabteaching.github.io/basic-data-types/narrative.html)
+ - [Slides](https://dyerlabteaching.github.io/basic-data-types/slides.html) covering the topic of basic data types.
+ - [Narrative](https://dyerlabteaching.github.io/basic-data-types/narrative.html) going a bit more in-depth over basic data types.
  - [Cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/master/base-r.pdf) for basic `R` functionality.
  - [Cheatsheet](https://github.com/DyerlabTeaching/Basic-Data-Types/raw/main/R_lubridate.pdf) for the library `lubridate`.
 
